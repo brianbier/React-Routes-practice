@@ -7,18 +7,19 @@ class Header extends React.Component {
     this.props.changeTitle(title);
   }
   render() {
+    // const archivesClass = location.pathname.match(/^\/archives/)?"active" : "";
     return (
         <div className="header clearfix">
           <nav>
             <ul className="nav nav-pills pull-xs-right">
               <li className="nav-item">
-              <Link to="/" className="nav-link" >Home</Link>
+                <Link to="featured" activeClassName="active" className="nav-link" >Featured</Link>
               </li>
               <li className="nav-item">
-                <Link to="featured" className="nav-link" >Featured</Link>
+                <Link to="contact" activeClassName="active" className="nav-link" >Contact</Link>
               </li>
               <li className="nav-item">
-                <Link to="contact" className="nav-link" >Contact</Link>
+                <Link to="archives"  activeClassName="active" className="nav-link" >Archives</Link>
               </li>
             </ul>
           </nav>
